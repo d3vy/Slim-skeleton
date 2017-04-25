@@ -1,0 +1,6 @@
+/.idea/
+/vendor/
+/cache/
+/logs/*
+!/logs/README.md
+/public/assets/css/*.css*
