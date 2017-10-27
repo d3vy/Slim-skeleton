@@ -1,0 +1,3 @@
+parameters:
+    environment: dev
+    app_name: slim-skeleton
