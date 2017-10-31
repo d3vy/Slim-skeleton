@@ -1,7 +1,7 @@
 /.idea/
 /vendor/
 /cache/
-/config/parameters.yaml
+/app/config/parameters.yaml
 /logs/*
 !/logs/README.md
 /public/assets/css/*.css*

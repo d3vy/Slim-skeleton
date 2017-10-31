@@ -1,6 +1,6 @@
 <?php
 
-$parameters = \Symfony\Component\Yaml\Yaml::parse(file_get_contents(__DIR__ . '/../config/parameters.yaml'))['parameters'];
+$parameters = \Symfony\Component\Yaml\Yaml::parse(file_get_contents(__DIR__ . '/config/parameters.yaml'))['parameters'];
 
 return [
     'settings' => [
