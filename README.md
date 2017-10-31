@@ -4,7 +4,7 @@
 
  - Clone or download this repository
  - Run `composer update` to install the latest components
- - Copy config/parameters.yaml.dist into app/config/parameters.yaml and modify the latter by your needs
+ - Copy app/config/parameters.yaml.dist into app/config/parameters.yaml and modify the latter by your needs
  - Run compass in public/assets or make your own asset solution
  
 ## Contains
