@@ -1,24 +1,38 @@
 {
+    "name": "subbysnake/Slim-skeleton",
+    "description": "Simple skeleton for Slim Framework",
+    "keywords": ["slim", "skeleton", "php-framework"],
+    "type": "project",
     "license": "MIT",
-    "require": {
-        "php": ">=5.5",
-        "slim/slim": "^3.1",
-        "slim/php-view": "^2.0",
-        "slim/twig-view": "^2.2",
-        "monolog/monolog": "^1.17",
-        "symfony/asset": "^3.2",
-        "symfony/yaml": "^3.3"
-    },
-    "require-dev": {
-        "kint-php/kint": "^1.1"
-    },
-	"scripts": {
-        "start": "php -S 0.0.0.0:8080 -t public public/index.php"
-	},
-    "config": {
-        "platform": {}
-    },
+    "homepage": "https://github.com/subbysnake/Slim-skeleton",
+    "authors": [
+        {
+            "name": "Szabolcs Surányi",
+            "email": "szabolcs.suranyi@shadesoft.hu",
+            "homepage": "http://shadesoft.hu"
+        }
+    ],
     "autoload": {
         "psr-4": { "": "src/" }
+    },
+    "require": {
+        "php": ">=5.5",
+        "monolog/monolog": "^1.0",
+        "slim/php-view": "^2.0",
+        "slim/slim": "^3.1",
+        "slim/twig-view": "^2.0",
+        "symfony/asset": "^3.0|^4.0",
+        "symfony/yaml": "^3.0|^4.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^3.0|^4.0"
+    },
+    "scripts": {
+        "start": "php -S localhost:8080 -t public"
+    },
+    "config": {
+        "platform": {},
+        "process-timeout": 0,
+        "sort-packages": true
     }
 }

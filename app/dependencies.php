@@ -9,26 +9,26 @@ $container['view'] = function ($c) {
 	$view = new \Slim\Views\Twig($settings['template_path'], [
 		'cache' => $settings['cache'] ? $settings['cache_path'] : false
 	]);
-	
+
 	// Asset management
 	$packages = new \Symfony\Component\Asset\Packages(new \Symfony\Component\Asset\UrlPackage(
-		'//' . $_SERVER['HTTP_HOST'], new \Symfony\Component\Asset\VersionStrategy\EmptyVersionStrategy()
+		'//' . $_SERVER['HTTP_HOST'], new \Symfony\Component\Asset\VersionStrategy\EmptyVersionStrategy
 	));
 	$assetManager = new \Twig\Extension\Asset($packages);
-	
+
 	// Instantiate and add Slim specific extension
 	$basePath = rtrim(str_ireplace('index.php', '', $c['request']->getUri()->getBasePath()), '/');
 	$view->addExtension(new Slim\Views\TwigExtension($c['router'], $basePath));
 	$view->addExtension($assetManager);
-	
+
 	return $view;
 };
 
 // monolog
 $container['logger'] = function ($c) {
-    $settings = $c->get('settings')['logger'];
-    $logger = new Monolog\Logger($settings['name']);
-    $logger->pushProcessor(new Monolog\Processor\UidProcessor());
-    $logger->pushHandler(new Monolog\Handler\StreamHandler($settings['path'], $settings['level']));
-    return $logger;
+	$settings = $c->get('settings')['logger'];
+	$logger = new Monolog\Logger($settings['name']);
+	$logger->pushProcessor(new Monolog\Processor\UidProcessor);
+	$logger->pushHandler(new Monolog\Handler\StreamHandler($settings['path'], $settings['level']));
+	return $logger;
 };
