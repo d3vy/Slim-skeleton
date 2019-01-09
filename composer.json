@@ -25,9 +25,16 @@
         "symfony/yaml": "^3.0|^4.0"
     },
     "require-dev": {
-        "symfony/var-dumper": "^3.0|^4.0"
+        "symfony/var-dumper": "^3.0|^4.0",
+        "zeuxisoo/slim-whoops": "^0.6"
     },
     "scripts": {
+        "post-install-cmd": [
+            "Command\\ScriptHandler::createParametersFile"
+        ],
+        "post-update-cmd": [
+            "Command\\ScriptHandler::createParametersFile"
+        ],
         "start": "php -S localhost:8080 -t public"
     },
     "config": {
