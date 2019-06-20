@@ -13,7 +13,10 @@
         }
     ],
     "autoload": {
-        "psr-4": { "": "src/" }
+        "psr-4": {
+            "App\\": "app/",
+            "": "src/"
+        }
     },
     "require": {
         "php": ">=5.5",
@@ -30,10 +33,10 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "Command\\ScriptHandler::createParametersFile"
+            "App\\ScriptHandler::createParametersFile"
         ],
         "post-update-cmd": [
-            "Command\\ScriptHandler::createParametersFile"
+            "App\\ScriptHandler::createParametersFile"
         ],
         "start": "php -S localhost:8080 -t public"
     },

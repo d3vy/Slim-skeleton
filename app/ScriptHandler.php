@@ -1,11 +1,11 @@
 <?php
 
-namespace Command;
+namespace App;
 
 class ScriptHandler {
 
     public static function createParametersFile() {
-        $configDir = __DIR__ . '/../../app/config';
+        $configDir = __DIR__ . '/config';
 
         if(!file_exists("{$configDir}/parameters.yaml")) {
             file_put_contents("{$configDir}/parameters.yaml",
