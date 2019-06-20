@@ -1,10 +1,10 @@
 {
-    "name": "subbysnake/slim-skeleton",
-    "description": "Simple skeleton for Slim Framework",
+    "name": "d3vy/slim-skeleton",
+    "description": "Simple skeleton for Slim Framework.",
     "keywords": ["slim", "skeleton", "php-framework"],
     "type": "project",
     "license": "MIT",
-    "homepage": "https://github.com/subbysnake/Slim-skeleton",
+    "homepage": "https://github.com/d3vy/Slim-skeleton",
     "authors": [
         {
             "name": "Szabolcs Surányi",

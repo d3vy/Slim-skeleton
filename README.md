@@ -7,7 +7,7 @@ Run this command from the directory in which you want to install your applicatio
 | Note: change `[app-name]` with the desired directory name.
 
 ```console
-composer create-project subbysnake/slim-skeleton [app-name]
+composer create-project d3vy/slim-skeleton [app-name]
 ```
 
 Modify app/config/parameters.yaml file by your needs
