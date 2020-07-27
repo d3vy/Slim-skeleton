@@ -4,12 +4,12 @@
     "keywords": ["slim", "skeleton", "php-framework"],
     "type": "project",
     "license": "MIT",
-    "homepage": "https://github.com/d3vy/Slim-skeleton",
+    "homepage": "https://github.com/d3vy/slim-skeleton",
     "authors": [
         {
             "name": "Szabolcs Surányi",
             "email": "szabolcs.suranyi@shadesoft.hu",
-            "homepage": "http://shadesoft.hu"
+            "homepage": "https://shadesoft.dev"
         }
     ],
     "autoload": {
